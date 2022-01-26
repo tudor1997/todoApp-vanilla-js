@@ -1,7 +1,7 @@
 const form = document.querySelector('.form-container');
 const container = document.querySelector('.container');
 const input = document.querySelector('.add');
-
+const title = document.querySelector('.app-title')
 
 const todos = JSON.parse(localStorage.getItem("todos"));
 
@@ -64,3 +64,9 @@ if(todos) {
         addItem(todo);
     })
 }
+
+const titleApp = "Todo List"
+
+title.innerHTML = titleApp.split("").map((letter,index) => {
+   return  `<span style="animation-delay:${index * 80}ms">${letter}</span>`
+}).join("")

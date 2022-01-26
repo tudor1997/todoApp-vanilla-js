@@ -20,6 +20,17 @@
     margin: 20px auto;
     text-shadow: 0 0 3px #111;
 }
+.main h2 span{
+    animation:animatedTitle 5s ease-in-out forwards infinite ;
+}
+@keyframes animatedTitle {
+    0% {
+       color: #e85d04;
+    }
+    100% {
+        color: #e9d8a6;
+    }
+}
 .form-container{
     margin: 30px auto;
     display:flex;
